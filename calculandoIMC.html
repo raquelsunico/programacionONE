@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa calcular IMC</title>
+</head>
+<body>
+    
+    <script>
+
+        function calcularIMC (peso, altura, nombre){
+
+            imc = Math.round(peso / (altura * altura));
+           imprimir("El IMC calculado de: " +" "+ nombre +" "+ "es: " + imc);
+    
+        }
+
+        calcularIMC(58,1.55,"Raquel");
+        calcularIMC(70,1.80,"Rene");
+        calcularIMC(47, 1.56,"Paola");
+       
+        function saltarLinea() {
+
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<hr>");
+            document.write("<br>");
+            document.write("<br>");
+        }
+     
+        function imprimir(frase) {
+
+            document.write("<big>" + frase + "</big>");
+            saltarLinea();
+        
+        }
+
+        imprimir("El IMC calculado es: " + ""+ imcRene);
+    </script>
+
+</body>
+</html>

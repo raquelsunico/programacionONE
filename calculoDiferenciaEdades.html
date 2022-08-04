@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diferencia de edades</title>
+</head>
+<body>
+    <script>
+
+        var anhoActual = 2022;
+        var anhoNacimientoPersona1 = 1995;
+        var anhoNacimientoPersona2 = 1998;
+        var diferenciaEdadPersonas= ((anhoActual-anhoNacimientoPersona1)-(anhoActual-anhoNacimientoPersona2));
+
+        function saltarLinea() {
+
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<hr>");
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function imprimir(frase) {
+
+            document.write("<big>" + frase + "</big>");
+            saltarLinea();
+           
+
+        }
+        
+        imprimir("Nuestra diferencia de edad es de: <br>" +diferenciaEdadPersonas+""+ " años");
+
+    </script>
+</body>
+</html>

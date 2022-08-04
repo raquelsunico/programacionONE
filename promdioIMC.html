@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa calcular IMC</title>
+</head>
+
+<body>
+
+    <script>
+
+        function calcularIMC(peso, altura) {
+
+          return Math.round(peso / (altura * altura));
+            
+        }
+
+        function saltarLinea() {
+
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<hr>");
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function imprimir(frase) {
+
+            document.write("<big>" + frase + "</big>");
+            saltarLinea();
+
+        }
+
+        imprimir("El promedio del IMC de Raquel y Rene calculado es: " +" "+ (calcularIMC(71,1.72)+calcularIMC(75, 1.73))/2);
+
+        imprimir("El promedio del IMC de Paola y Samuel calculado es: " +" "+ (calcularIMC(65,1.68)+calcularIMC(55,1.60))/2);
+    
+    </script>
+
+</body>
+
+</html>
